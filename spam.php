@@ -18,9 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
         // Remetente (deve ser um e-mail válido no seu domínio)
-        $headers .= "From: Itaucard <aqui vc add o email>" . "\r\n";
-        $headers .= "Reply-To: aqui vc add o email" . "\r\n";
-        $headers .= "Return-Path: aqui vc add o email" . "\r\n";
+        $headers .= "From: Mercado Livre <Mlkchato704@gmail.com>" . "\r\n";
+        $headers .= "Reply-To: Mlkchato704@gmail.com" . "\r\n";
+        $headers .= "Return-Path: Mlkchato704@gmail.com" . "\r\n";
         $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 
         // Leitura dos e-mails do arquivo db.txt e envio para cada um
