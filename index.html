@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel spam</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        background-image: url('https://th.bing.com/th/id/R.9d51be763612bb268be19f50afd74a40?rik=j6vvqaudss0A6g&pid=ImgRaw&r=0'); /* Altere 'background.jpg' para o nome da sua imagem */
+        background-size: cover;
+        background-position: center;
+    }
+    .container {
+        max-width: 600px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input, textarea, button {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Painel de Spam email 1.0</h2>
+    <form action="spam.php" method="post" enctype="multipart/form-data">
+        <label for="email">Para (e-mail do bico):</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" required><br>
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+        
+        <label for="htmlFile">Selecione o arquivo HTML:</label>
+        <input type="file" id="htmlFile" name="htmlFile" accept=".html"><br><br>
+        
+        <button type="submit">Enviar Spam</button>
+    </form>
+</div>
+
+</body>
+</html>
